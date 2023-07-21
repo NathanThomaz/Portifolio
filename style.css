@@ -63,21 +63,23 @@ body{
 }
 #curriculo, #sobre_mim{
     position: relative;
+    left: 37%;
     border: solid 3px; 
     border-color: white;
     border-radius: 10px;
     text-decoration: none;
     color: white;
-    top: 40px;
     font-size: 20px;
-}
-#curriculo{
-    right: 8%;
-}
-#sobre_mim{
-    right: 5%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 20%;
+    height: 10%;
 }
 #curriculo:hover, #sobre_mim:hover{
-    font-size: 27px;
+    width: 24%;
+    height: 15%;
+    font-size: 25px;
     color: rgb(17, 199, 255);;
 }
