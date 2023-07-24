@@ -5,9 +5,8 @@ body{
     background-image: url(imgs/leao_esq.jpg);
     background-repeat: no-repeat;
     background-color: black;
-    background-position-y: 50px;
-    background-position-x: 95%;
-    background-size: 42%;
+    background-position-y: 40px;
+    background-position-x: 900px;
 }
 #container_menus{
     display: flex;
@@ -33,10 +32,11 @@ body{
     font-size: 25px;
 }
 #container_informacoes{
+    animation: iniciar .7s forwards;
     margin: 0px 15%;
     box-sizing: border-box;
     display: block;
-    padding-top: 5rem;
+    padding-top: 3rem;
 }
 #nome{
     width: 30%;
@@ -82,13 +82,13 @@ body{
     width: 150px;
 }
 #curriculo:hover{
-    width: 170px;
+    width: 150px;
     height: 60px;
     font-size: 25px;
     color: rgb(17, 199, 255);
 }
 #sobre_mim:hover{
-    width: 170px;
+    width: 150px;
     height: 60px;
     font-size: 25px;
     color: rgb(17, 199, 255);
@@ -101,17 +101,29 @@ body{
     width: 100%;
 }
 #redes-sociais .icones .tam{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     margin-left: 10px;
     margin-top: 12px;
 }
 #redes-sociais .icones #diss{
-    margin-top: 5px;
-    width: 60px;
-    height: 66px;
+    margin-top: 6px;
+    width: 50px;
+    height: 55px;
+    margin-left: 5px;
 }
 #redes-sociais .icones #email{
-    width: 60px;
-    height: 80px;
+    width: 55px;
+    height: 65px;
+}
+
+@keyframes iniciar {
+    from{
+        opacity: 0;
+        transform: translate3d(0, 60px,0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
 }
