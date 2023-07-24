@@ -1,20 +1,19 @@
 body{
-    width: 1920px;
-    height: 1080px;
-    margin: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
     background-image: url(imgs/leao_esq.jpg);
     background-repeat: no-repeat;
     background-color: black;
-    background-position-y: 110px;
+    background-position-y: 50px;
     background-position-x: 95%;
-    background-size: 750px;
+    background-size: 42%;
 }
 #container_menus{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.301);
-    position: fixed;
+    position: relative;
     width: 100%;
     height: 70px;
 }
@@ -29,42 +28,40 @@ body{
     font-size: 20px;
 }
 .select-list a:hover{
-    opacity: 1 !important;
+    opacity: 0.8 !important;
     color: rgb(17, 199, 255);
     font-size: 25px;
-    text-transform: capitalize;
 }
 #container_informacoes{
-    position: relative;
-    top: 155px;
-    right: 50px;
-    width: 100%;
-    height: 350px;
-    justify-content: center;
-    display: flex;
+    margin: 0px 15%;
+    box-sizing: border-box;
+    display: block;
+    padding-top: 5rem;
 }
 #nome{
-
+    width: 30%;
+    display: grid;
 }
 #prm_nome, #seg_nome,#inf{
     position: relative;
     color: white;
-    display: flex;
 }
 #prm_nome{
-    top: 80px;
+    top: 55px;
+    padding-left: 40%;
     font-size: 80px;
-    width: 100%;
 }
 #seg_nome{
-    right: 110px;
-    top: 10px;
+    padding-left: 11%;
     font-size: 105px;
 }
 #inf{
     font-size: 24px;
-    bottom: 6%;
-    right: 115px;
+    bottom: 15px;
+    padding-left: 3%;
+}
+#opcoes{
+    padding-left: 6%;
 }
 #curriculo, #sobre_mim{
     position: relative;
@@ -79,11 +76,9 @@ body{
     height: 45px;
 }
 #curriculo{
-    left: 80px;
     width: 150px;
 }
 #sobre_mim{
-    left: -265px;
     width: 150px;
 }
 #curriculo:hover{
@@ -100,11 +95,10 @@ body{
 }
 #redes-sociais{
     display: inline-flex;
-    position:fixed;
-    bottom: 5px;
+    position: absolute;
+    bottom: 0px;
     justify-content: center;
     width: 100%;
-    left: 30px;
 }
 #redes-sociais .icones .tam{
     width: 50px;
